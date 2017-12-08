@@ -8,7 +8,7 @@ html {
 html a {
 	text-decoration: none;
 	color: #d6f6ff;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 
 html a:hover {
@@ -45,9 +45,9 @@ nav li {
 	/* color: white !important; */
 }
 
-ul li {
+/*ul li {
 	list-style-type: none;
-}
+}*/
 
 /* title { */
 	/* text-transform: uppercase; */
@@ -78,11 +78,19 @@ title {
 .logo{
 	max-width: 100%;
     max-height: 100px;
-    width: auto;
+    margin: 1%;
+    /*float: left;*/
+    /*width: auto;
     height: auto;
-    transition: 0.2s;
+    transition: 0.2s;*/
 	display : inline-block;
 } 
+
+.site-title{
+	/*float: right;
+	display : inline-block;*/ 
+	left: 200px;
+}
 
 .img-top {
 	display: block;
@@ -92,9 +100,9 @@ title {
     height: auto;
 }
 
-#carteAccueil {
+/*#carteAccueil {
 	display : inline;
-}
+}*/
 
 .site-description { /*breizhtourisme.com*/
 	color : white;
@@ -109,23 +117,47 @@ title {
 }
 
 article{
-	padding: 0 10%;
+	padding: 0 20%;
 	color: white;
-	    font-size: 1.75rem;
+	font-size: 1.75rem;
+	line-height: 32pt;
 }
 
 footer {
 	background-color : #005f6b;
-	    padding: 1.6em 10%;
+	padding: 2em 20%;
 }
+
+footer #rss-9{
+	width: 500px;
+}
+
+footer hr {
+	height: 1px;
+	color: #007787; 
+	background-color: #007787; 
+	border: none;
+	} 
 
 footer a {
 	color : white;
+	font-weight: bold;
 }
 
 
 footer a:hover {
-	color : white;
+	color : #d6f6ff;
+}
+
+footer ul{
+	list-style: none;
+	padding: 0%;
+}
+
+footer li {
+	margin: 3%;	
+	margin-left: 0;
+	font-size: 1.1rem;
 }
 	
 h1 {
@@ -138,6 +170,8 @@ h2, h3, h4, h5, h6 {
 	color: black;
 	text-transform: uppercase;
 	font-family: myFirstFont;
+	font-weight: normal;
+	font-size: 1.2em;
 }
 
 
@@ -150,3 +184,54 @@ h2, h3, h4, h5, h6 {
     max-width: 1040px;
 	
 }*/	
+
+/* CSS MAP SVG */
+
+.map{
+	overflow: hidden;
+}
+
+.map__image{
+	width: 50%;
+	float: right;
+	margin-right: 10%;
+}
+
+.map__image svg{
+	height: 300px;
+	width: 100%;
+}
+
+.map__image path{ 
+	fill: #005f6b; /*couleur de la carte*/
+	transition: fill 0.3s;
+}
+
+.map__image .is-active path{ /*survole*/
+	fill: #d6f6ff;
+}
+
+.map__list{
+	margin-top: 3%;
+	margin-left: 3%;
+	float: left;
+	width: 35%;
+}
+
+.map__list a{
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.map__list a.is-active{ /*survole*/
+	color: #d6f6ff;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/*.map__list li{ 
+	margin: 2%;
+}*/
+
+/* FIN CSS MAP SVG*/
