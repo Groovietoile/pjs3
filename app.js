@@ -1,6 +1,12 @@
 var map = document.querySelector('#map')
 var paths = map.querySelectorAll('.map__image a') //formes géométriques
 var links = map.querySelectorAll('.map__list a')
+var imagesDiapo = new Array();
+imagesDiapo[0] = "img/bretagneAccueil.jpg";
+imagesDiapo[1] = "img/bretagneAccueil.jpg";
+imagesDiapo[2] = "img/bretagneAccueil.jpg";
+
+
 
 //Polyfill du foreach --> rend le forEach accessible
 if (NodeList.prototype.forEach === undefined){ //si méthode forEach inexistante dans NodeList
@@ -36,3 +42,7 @@ links.forEach(function (link){ //active le lien survolé
 map.addEventListener('mouseover', function (){ //élément plus survolé
 	activeArea()
 })
+
+function diapo(){
+	//a faire lundi
+}

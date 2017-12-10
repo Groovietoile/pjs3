@@ -8,15 +8,17 @@
 }
 
 .map__image svg{
-	height: 500px;
+	height: 200px;
+	width: 100%;
+
 }
 
-.map__image path{
-	fill: #005f6b;
+.map__image path{ 
+	fill: #005f6b; /*couleur de la carte*/
 	transition: fill 0.3s;
 }
 
-.map__image .is-active path{
+.map__image .is-active path{ /*survole*/
 	fill: #d6f6ff;
 }
 
@@ -31,7 +33,7 @@
 	transition: color 0.3s;
 }
 
-.map__list a.is-active{
+.map__list a.is-active{ /*survole*/
 	color: #d6f6ff;
 	font-weight: bold;
 	text-decoration: underline;
