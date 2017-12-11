@@ -43,6 +43,17 @@ map.addEventListener('mouseover', function (){ //élément plus survolé
 	activeArea()
 })
 
-function diapo(){
-	//a faire lundi
+	 I = 0 ;
+     Imax = document.imagesDiapo.length - 1 ;
+     setTimeout(suivante, 2000) ;
+    
+     function suivante()
+     {
+     document.imagesDiapo[I].style.display = "none" ;
+     if ( I < Imax )
+          I++;
+     else
+          I=0;    
+     document.imagesDiapo[I].style.display = "block";
+     setTimeout(suivante, 2000) ;
 }
