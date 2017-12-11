@@ -28,17 +28,18 @@ body {
 }
 
 nav {
-	/*position: fixed;*/
-	float: right; 
+	/*position: sticky;*/
+	/*float: right;*/ 
 	display: inline-block;
-	margin-right:10px; 
+	margin-left:100px; 
 	/*padding-top: 10px;*/ 
 	/*left: 12;*/
 	/*position: absolute;*/
 	list-style-type: none;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-right: 20;
+
+/*	padding-right: 20%;*/
 	/* margin-bottom: 10%; */
 }
 
@@ -67,16 +68,18 @@ title {
 	text-transform: uppercase;
 }
 
-.bandeGriseHeader {
-	position : sticky;
-	width: 100%;
+.bandeGriseHeader{
+display: flex;
+
+/*position : sticky;*/
+	/*width: 100%;*/
 	/* max-width: 1040px; */
-	border : 0 auto 20px auto;
+	/*border : 0 auto 20px auto;
     padding-left: 2%;
-	margin : 0;
+	margin : 0;*/
 	/* position: relative;	 */
 	   /* z-index: 2 */
-  
+  /*
 	background-color : #666;
 	
 	display: flex;
@@ -86,6 +89,10 @@ title {
 	align-items: center;
 }
 
+.site-title a{
+	margin-left: 10px;
+	color: #D8D8D8;
+}
 
 .site-title{
 
@@ -156,15 +163,20 @@ title {
 }*/
 
 .site-description { /*breizhtourisme.com*/
-	color : white;
+	color : #D8D8D8;
 	font-size :  14px;
     text-transform: uppercase;
 	margin : 0;
 	background-color: #005f6b;
 	text-align: left;
-	padding : 0.8em 0 0.8em 20%;
+	padding : 0.8em 0 0.8em 2%;
 	font-weight : bold;
 	line-height : 1.6;
+	/*justify-content: flex-start;*/
+}
+
+.site-description a{
+	color: #D8D8D8;
 }
 
 article{
@@ -236,7 +248,7 @@ h2, h3, h4, h5, h6 {
 	
 <<<<<<< HEAD
 }	*/	
-=======
+=================================================
 }*/	
 
 /* CSS MAP SVG */
@@ -263,6 +275,7 @@ h2, h3, h4, h5, h6 {
 
 .map__image .is-active path{ /*survole*/
 	fill: #d6f6ff;
+	
 }
 
 .map__list{
@@ -279,14 +292,15 @@ h2, h3, h4, h5, h6 {
 }
 
 .map__list a.is-active{ /*survole*/
-	color: #d6f6ff;
+	color: #005f6b;
 	font-weight: bold;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
+
 }
 
 
 /* CSS Gastro*/
-
+==================================================================
 .Crepe{
 		
 		height: auto;
