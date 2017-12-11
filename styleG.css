@@ -24,6 +24,11 @@ body {
 	display: block;
 }
 
+font-face {
+    font-family: myFirstFont;
+    src: url(font/Fondamento-Regular.ttf);
+}
+
 nav {
 	/* float: right; */
 	right: 0;

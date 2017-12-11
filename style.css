@@ -8,7 +8,7 @@ html {
 html a {
 	text-decoration: none;
 	color: white;
-	/*font-weight: bold;*/
+	font-weight: bold;
 }
 
 html a:hover {
@@ -76,12 +76,12 @@ title {
 	margin : 0;
 	/* position: relative;	 */
 	   /* z-index: 2 */
-    font-size: 1rem;
+  
 	background-color : #666;
 	
 	display: flex;
 	flex-wrap: nowrap;
-	width: 10%;
+	
 	/*justify-content: space-between;*/
 	align-items: center;
 }
@@ -137,6 +137,19 @@ title {
     width: 100%;
     height: auto;
 }
+
+.entry-title{
+
+	font-family: myFirstFont;
+
+}
+
+.sous-titre{
+
+	font-family: myFirstFont;
+
+}
+
 
 /*#carteAccueil {
 	display : inline;
@@ -272,10 +285,92 @@ h2, h3, h4, h5, h6 {
 }
 
 
+/* CSS Gastro*/
 
-/*.map__list li{ 
-	margin: 2%;
-}*/
+.Crepe{
+		
+		height: auto;
+		width: auto;
+    	margin : auto;
+    	
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+}
 
-/* FIN CSS MAP SVG*/
->>>>>>> 93e625e12b4e31dc1e16a871f1d54e6518ee3a20
+.farBreton{
+
+		height: auto;
+		width: auto;
+    	margin : auto;
+    	
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+
+}
+
+
+.Cidre{
+
+		height: auto;
+		width: auto;
+    	margin : auto;
+    	
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+
+}
+
+
+
+.Beurre{
+
+		height: auto;
+		width: auto;
+    	margin : auto;
+    	
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+
+}
+
+
+.Mer{
+
+		height: auto;
+		width: auto;
+    	margin : auto;
+    	
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+
+}
+
+.Palet{
+
+
+		height: auto;
+		width: auto;
+    	margin : auto;
+    	
+    	display: flex;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+
+}
