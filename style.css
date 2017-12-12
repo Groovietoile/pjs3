@@ -27,8 +27,8 @@ body {
 
 nav {
 	display: inline-block;
-	margin-left: 40%; 
-	margin-right: 20%;
+	/*margin-left: 40%;*/ 
+	margin-right: 20px;
 	right: 0;
 	position: absolute;
 	font-weight: bold;
@@ -56,9 +56,8 @@ title {
 
 .bandeGriseHeader {
 	/*position : sticky;*/
-	width: 100%;
-	border : 0 auto 20px auto;
-	padding-left: 20%;
+	/*border : 0 auto 20px auto;*/
+	padding-left: 2%;
 	margin: 0;
     font-size: 1rem;
 	background-color : #666;
@@ -117,7 +116,7 @@ title {
 	margin : 0;
 	background-color: #005f6b;
 	text-align: left;
-	padding : 0.8em 0 0.8em 20%;
+	padding : 0.8em 0 0.8em 2%;
 	font-weight : bold;
 	line-height : 1.6;
 }
