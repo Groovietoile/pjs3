@@ -1,5 +1,4 @@
 html {
-    /* font-family: sans-serif; */
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     font-family: "Ubuntu",sans-serif;
@@ -8,12 +7,11 @@ html {
 html a {
 	text-decoration: none;
 	color: white;
-	font-weight: bold;
 }
 
 html a:hover {
-	text-decoration: none;
-	color: #d6f6ff;
+	text-decoration: bold;
+	color: #005f6b;
 }
 	
 body {
@@ -28,19 +26,19 @@ body {
 }
 
 nav {
-	/*position: sticky;*/
-	/*float: right;*/ 
 	display: inline-block;
-	margin-left:100px; 
-	/*padding-top: 10px;*/ 
-	/*left: 12;*/
-	/*position: absolute;*/
-	list-style-type: none;
+	margin-left: 40%; 
+	margin-right: 20%;
+	right: 0;
+	position: absolute;
 	font-weight: bold;
 	text-transform: uppercase;
+	text-align: right;
 
-/*	padding-right: 20%;*/
-	/* margin-bottom: 10%; */
+	display: flex;
+	flex-wrap: wrap;
+	/* ------ NAV LUDO ------- */ 
+	/*list-style-type: none; */
 }
 
 nav li {
@@ -48,69 +46,42 @@ nav li {
 	padding-top: 22.4px;
 	padding-bottom: 22.4px;
 	margin-left: 22.4px;
-	/* color: white !important; */
 }
 
-/*ul li {
-	list-style-type: none;
-}*/
-
-/* title { */
-	/* text-transform: uppercase; */
-/* } */
-
-/* .title { */
-	/* text-transform: uppercase; */
-/* } */
 
 title {
 	color: red;
 	text-transform: uppercase;
 }
 
-.bandeGriseHeader{
-display: flex;
-
-/*position : sticky;*/
-	/*width: 100%;*/
-	/* max-width: 1040px; */
-	/*border : 0 auto 20px auto;
-    padding-left: 2%;
-	margin : 0;*/
-	/* position: relative;	 */
-	   /* z-index: 2 */
-  /*
+.bandeGriseHeader {
+	/*position : sticky;*/
+	width: 100%;
+	border : 0 auto 20px auto;
+	padding-left: 20%;
+	margin: 0;
+    font-size: 1rem;
 	background-color : #666;
-	
+
 	display: flex;
 	flex-wrap: nowrap;
-	
-	/*justify-content: space-between;*/
+	width: 10%;
 	align-items: center;
+
+	/* ------ NAV LUDO ------- */
+	/*display: flex;
+	align-items: center;*/
 }
 
-.site-title a{
-	margin-left: 10px;
-	color: #D8D8D8;
-}
-
-.site-title{
-
-
-}
 
 .logo{
 	max-width: 100%;
     max-height: 100px;
     margin: 30% 0%;
-    /*float: left;*/
-    /*width: auto;
-    height: auto;
-    transition: 0.2s;*/
 	display : inline-block;
 } 
 
-.title{
+.site-title{
 	width: 10%;
 	margin: 0% 10%;
 	font-family: myFirstFont;
@@ -123,60 +94,36 @@ display: flex;
 
 .img-top {
 	display: block;
-	/* margin-top: 10%; */
-    /* margin: 0 auto; */
     width: 100%;
     height: auto;
 }
 
 .img-top1 {
 	display: none;
-	/* margin-top: 10%; */
-    /* margin: 0 auto; */
     width: 100%;
     height: auto;
 }
 
 .img-top2 {
 	display: none;
-	/* margin-top: 10%; */
-    /* margin: 0 auto; */
     width: 100%;
     height: auto;
 }
 
-.entry-title{
-
-	font-family: myFirstFont;
-
-}
-
-.sous-titre{
-
-	font-family: myFirstFont;
-
-}
-
-
-/*#carteAccueil {
-	display : inline;
-}*/
-
 .site-description { /*breizhtourisme.com*/
-	color : #D8D8D8;
+	color : white;
 	font-size :  14px;
     text-transform: uppercase;
 	margin : 0;
 	background-color: #005f6b;
 	text-align: left;
-	padding : 0.8em 0 0.8em 2%;
+	padding : 0.8em 0 0.8em 20%;
 	font-weight : bold;
 	line-height : 1.6;
-	/*justify-content: flex-start;*/
 }
 
-.site-description a{
-	color: #D8D8D8;
+.site-description a:hover{
+	color: #666666;
 }
 
 article{
@@ -184,6 +131,10 @@ article{
 	color: white;
 	font-size: 1.75rem;
 	line-height: 32pt;
+}
+
+article p{
+	text-align: justify;
 }
 
 footer {
@@ -209,7 +160,7 @@ footer a {
 
 
 footer a:hover {
-	color : #d6f6ff;
+	color : #666666;
 }
 
 footer ul{
@@ -237,7 +188,6 @@ h2, h3, h4, h5, h6 {
 	font-size: 1.2em;
 }
 
-
 /*faut rajouter 2 media queries*/
 /* @media screen and (min-width: 768px) */
 /*  
@@ -245,13 +195,9 @@ h2, h3, h4, h5, h6 {
 	margin-left: auto;
     margin-right: auto;
     max-width: 1040px;
-	
-<<<<<<< HEAD
-}	*/	
-=================================================
 }*/	
 
-/* CSS MAP SVG */
+/* ----- CSS MAP SVG ------ */
 
 .map{
 	overflow: hidden;
@@ -274,8 +220,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .map__image .is-active path{ /*survole*/
-	fill: #d6f6ff;
-	
+	fill: #ffffff;
 }
 
 .map__list{
@@ -283,6 +228,7 @@ h2, h3, h4, h5, h6 {
 	margin-left: 3%;
 	float: left;
 	width: 35%;
+
 }
 
 .map__list a{
@@ -294,97 +240,43 @@ h2, h3, h4, h5, h6 {
 .map__list a.is-active{ /*survole*/
 	color: #005f6b;
 	font-weight: bold;
-	/*text-decoration: underline;*/
-
+	text-decoration: underline;
 }
 
+/* ----- FIN CSS MAP SVG ------ */
 
-/* CSS Gastro*/
-==================================================================
-.Crepe{
-		
-		height: auto;
-		width: auto;
-    	margin : auto;
-    	
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	flex-flow: row wrap;
-    	justify-content: space-around;
+/* ----- CSS Gastro ------ */
+
+.imageG{
+	height: auto;
+	width: auto;
+	margin : auto;
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;
 }
 
-.farBreton{
-
-		height: auto;
-		width: auto;
-    	margin : auto;
-    	
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	flex-flow: row wrap;
-    	justify-content: space-around;
-
+.txt-img{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
 }
 
-
-.Cidre{
-
-		height: auto;
-		width: auto;
-    	margin : auto;
-    	
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	flex-flow: row wrap;
-    	justify-content: space-around;
-
+#Far{
+	width: auto;
+	margin-left: 2%;
 }
 
-
-
-.Beurre{
-
-		height: auto;
-		width: auto;
-    	margin : auto;
-    	
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	flex-flow: row wrap;
-    	justify-content: space-around;
-
+#Cidre{
+	width: 100%;
+	margin-right: 2%;
 }
 
-
-.Mer{
-
-		height: auto;
-		width: auto;
-    	margin : auto;
-    	
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	flex-flow: row wrap;
-    	justify-content: space-around;
-
+#imgCenter{
+	width: auto;
+    margin : auto;
 }
-
-.Palet{
-
-
-		height: auto;
-		width: auto;
-    	margin : auto;
-    	
-    	display: flex;
-    	flex-direction: row;
-    	flex-wrap: wrap;
-    	flex-flow: row wrap;
-    	justify-content: space-around;
-
-}
+/* ------ FIN CSS Gastro ------ */
